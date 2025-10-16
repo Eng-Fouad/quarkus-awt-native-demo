@@ -1,0 +1,17 @@
+[versions]
+java                       = "25"     # https://openjdk.org/projects/jdk/
+quarkus                    = "3.28.3" # https://central.sonatype.com/artifact/io.quarkus/quarkus-bom
+quarkus-zxing              = "1.0.2"  # https://central.sonatype.com/artifact/io.quarkiverse.barcode/quarkus-zxing
+quarkus-pdfbox             = "1.1.2"  # https://central.sonatype.com/artifact/io.quarkiverse.pdfbox/quarkus-pdfbox
+quarkus-poi                = "2.1.4"  # https://central.sonatype.com/artifact/io.quarkiverse.poi/quarkus-poi
+
+[plugins]
+quarkus                    = { id = "io.quarkus",                                          version.ref = "quarkus"        }
+
+[libraries]
+quarkus-bom                = { group = "io.quarkus.platform",    name = "quarkus-bom",     version.ref = "quarkus"        }
+quarkus-picocli            = { group = "io.quarkus",             name = "quarkus-picocli"                                 }
+quarkus-awt                = { group = "io.quarkus",             name = "quarkus-awt",     version     = "999-SNAPSHOT"   }
+quarkiverse-barcode-zxing  = { group = "io.quarkiverse.barcode", name = "quarkus-zxing",   version.ref = "quarkus-zxing"  }
+quarkiverse-pdfbox         = { group = "io.quarkiverse.pdfbox",  name = "quarkus-pdfbox",  version.ref = "quarkus-pdfbox" }
+quarkiverse-poi            = { group = "io.quarkiverse.poi",     name = "quarkus-poi",     version.ref = "quarkus-poi"    }
